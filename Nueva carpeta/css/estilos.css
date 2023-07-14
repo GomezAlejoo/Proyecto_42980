@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #1b1b1b;
   }
   
   header {
@@ -14,8 +15,13 @@ body {
     
   }
 
+
   h1{
     font-family:  'Bebas Neue';
+  }
+
+  h4{
+    font-size: 15px;
   }
   
   .nav-list li {
@@ -49,7 +55,8 @@ body {
   color: white;
   font-family: 'Merriweather', serif;
   top: 2%;
-  left: 45%;
+  left: 43%;
+  
   text-align: center;
 }
 
@@ -83,9 +90,7 @@ header{
   text-align: center;  
 }
 
-main{
-  background-color:#1B1B1B ;
-}
+
 
 .margen{
   padding-top: 20px;
@@ -129,6 +134,47 @@ main{
 .imagenCorte{
   margin: 50px;
 }
+
+.imagenCorte:hover{
+  filter: grayscale(70%);}
+
+.imagenCarrusel{
+  height: 570px;
+}
+
+/*Footer*/
+
+.texto__footer{
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10px;
+}
+
+.iconFooter{
+  height: 25px;
+  width: 25px;
+}
+
+.contenedor__footer{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.contenedor__redes{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.contenedor__redes__imagen{
+  position: absolute;
+  
+
+}
+  
 
 
 
