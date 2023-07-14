@@ -48,6 +48,13 @@ body {
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
+ 
+}
+
+.navegacionenlase:hover{
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #d2ac7f, 0 0 10px #d2ac7f, 0 0 15px #d2ac7f, 0 0 20px #d2ac7f, 0 0 30px #d2ac7f, 0 0 40px #d2ac7f, 0 0 55px #d2ac7f, 0 0 75px #d2ac7f;
+  
 }
 
 .navegacion__texto{
@@ -55,8 +62,7 @@ body {
   color: white;
   font-family: 'Merriweather', serif;
   top: 2%;
-  left: 43%;
-  
+  left: 42%;
   text-align: center;
 }
 
@@ -70,15 +76,27 @@ body {
 
 }
 
-header{
+.header__index{
   background-image: url(../assets/fondo_header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 790px;
   position: relative;
-  filter: grayscale(80%); /* Aquí puedes ajustar el tipo de filtro que deseas aplicar */
+  filter: grayscale(80%); 
   
+}
+
+.header__nosotros{
+  background-image: url(../assets/fondo_header_nosotros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 790px;
+  position: relative;
+  filter: grayscale(80%); 
+  
+
 }
 
 .texto__header{
@@ -136,7 +154,7 @@ header{
 }
 
 .imagenCorte:hover{
-  filter: grayscale(70%);}
+  filter: grayscale(60%);}
 
 .imagenCarrusel{
   height: 570px;
@@ -175,6 +193,26 @@ header{
 
 }
   
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.barber {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.barber img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
 
 
 
