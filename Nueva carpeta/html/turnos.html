@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@1,300&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cayetano Barber-Nosotros</title>
 </head>
 <body>
-    <header>
-        <div>
-        <div class="logo_inicio">
-        <a href=""><img class="logo" src="estilo-de-pelo.png" alt=""></a>
+  <header class="header__turnos">
+      <div class="logo_inicio">
+        <a href=""><img class="logo" src="../estilo-de-pelo.png" alt=""></a>
         
           <p class="direccion">Direccion: Cayetano Cazon 2150</p>
     
-        <div class="navegacion__texto">
-          <h1>Cayetano Barber</h1>
-        </div>
-    
-        <nav>
+          <div class="navegacion__texto">
+            <h1>Cayetano Barber</h1>
+          </div>
+      
+        <nav >
+     
           <ul class="navegacionPrincipal">
-            <li><a class="navegacionenlase" href="#">Inicio</a></li>
-            <li><a class="navegacionenlase" href="#">Nosotros</a></li>
-            <li><a class="navegacionenlase" href="#">turnos</a></li>
-            <li><a class="navegacionenlase" href="#">Ubicacion</a></li>
-            <li><a class="navegacionenlase" href="#">Galeria</a></li>
+            <li><a class="navegacionenlase" href="../index.html">Inicio</a></li>
+            <li><a class="navegacionenlase" href="nosotros.html">Nosotros</a></li>
+            <li><a class="navegacionenlase" href="·">Turnos</a></li>
+            <li><a class="navegacionenlase" href="ubicacion.html">Ubicacion</a></li>
+            <li><a class="navegacionenlase" href="galeria.html">Galeria</a></li>
           </ul>
+
         </nav>
-        
+      
       </div>
+
+    </div>
+ 
+  </header>
+
+  <main class="main_formulario">
+    <div class="main_formulario_contenedor">
+        <div>
+         <h1 class="textoFormulario_turnos">Formulario de Contacto</h1>
+        </div>
+            <div class="formulario">
+
+              <form class=" formulario_turnos">
+                <label for="nombre">Nombre:</label>
+                <input type="text"  name="nombre" required><br>
+            
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" required><br>
+            
+                <label for="numero">Número de Celular:</label>
+                <input type="tel" name="numero" pattern="[0-9]{10}" required><br>
+            
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" rows="4" cols="50" required></textarea><br>
+
+                    <input type="submit" value="Enviar">
+                  
+              </form>
+            </div>
       </div>
-    
-    
-      </header>
+  </main>
+
+  <footer>
+
+    <div class="contenedor__footer ">
+
+      <div class="contenedor__footer texto__footer">
+        <h4>Cayetano <br> Barber</h4>
+       
+      </div>
+
+      <div  class="contenedor__redes texto__footer">
+        <h4>Siguienos en nuestras redes</h4>
+          <div class="contenedor__redes__imagen">
+            <img class="iconFooter" src="../assets/instagram.png" alt="">
+            <img class="iconFooter" src="../assets/facebook.png" alt="">
+          </div>
+      </div>
+
+      <div  class="texto__footer">
+        <h4>2020-2023 Cayetano Barber. Todos los derechos reservados.</h4>      
+        <h4>Cayetano Barber y su logo son marca registrada.</h4>
+      </div>
+
+    </div>
+
+
+  </footer>
     
 </body>
 </html>
