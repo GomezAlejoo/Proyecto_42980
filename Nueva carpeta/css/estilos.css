@@ -7,6 +7,13 @@ body {
   h1{
     font-family:  'Bebas Neue';
   }
+
+  h2{
+    font-family: 'Roboto Condensed', sans-serif;  }
+
+  p{
+    font-family: 'Noto Sans', sans-serif;
+  }
   
 .bg-light{
   background-color: #1b1b1b !important;
@@ -68,6 +75,16 @@ body {
 
 .header__turnos{
   background-image: url(../assets/fondo_header_turnos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 790px;
+  position: relative;
+  filter: grayscale(50%); 
+}
+
+.header__ubicacion{
+  background-image: url(../assets/fondo_header_ubicacion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
