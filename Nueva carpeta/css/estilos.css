@@ -106,6 +106,17 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #d2ac7f, 0 0 3
   filter: grayscale(50%); 
 }
 
+.header__galeria{
+  background-image: url(../assets/fondo_header_ubicacion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 790px;
+  position: relative;
+  filter: grayscale(50%);
+
+}
+
 .texto__header{
   color: white;
   position: absolute;
@@ -116,7 +127,11 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #d2ac7f, 0 0 3
   text-shadow: 2px 2px 2px #000000;
 }
 
-
+.texto_barberia{
+  max-width: 900px;
+  text-align: center;
+  margin: 30px auto;
+}
 
 
 .textoPrincipal{
@@ -164,153 +179,23 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #d2ac7f, 0 0 3
 
 /*Footer*/
 
-footer{
-  position: fixed;
-  bottom: 0;
+.contenedor_footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (min-width:800px ) 
-{
-  footer{
-    position: static;
-  }
-   
-}
-
-.footer_distribucion{
+footer {
   background-color: #1b1b1b;
-  widows: 100%;
   text-align: center;
-  font: bold 16px sans-serif;
-  padding: 50px 50px 60px 50px;
-  margin-top: 80px;
-
+  padding: 10px 0;
 }
 
-.footer_distribucion .footer__izquieda, .footer_distribucion .footer__center, .footer_distribucion 
-.footer__derecha {
-    display: inline-block;
-    vertical-align: top;
-
-}
-
-
-
-.footer_distribucion .footer__izquieda {
-  width: 30%;
-}
-
-.footer_distribucion h3 {
-  color: #fff;
-  font: normal 36px 'cookie',cursive;
+footer p {
   margin: 0;
-}
-
-.footer_distribucion h3 span{
-  color:#71716f;
-}
-
-.footer_distribucion .footer_links{
   color: #fff;
-  margin: 20px 0 12px;
-
 }
 
-.footer_distribucion .footer_links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit ;
-
-}
-
-.footer_distribucion .footer__cayetanobarber{
-  color: #c5c3c3;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-
-}
-
-
-.footer_distribucion .footer__center{
-  width: 35%;
-
-}
-
-.footer_distribucion .footer__center img{
-  color: #fff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-
-
-}
-
-.footer_distribucion .footer__center p{
-  display: inline-block;
-  color: #fff;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.footer_distribucion .footer__center p span {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-}
-
-.footer_distribucion .footer__derecha {
-  width: 30%;
-}
-
-.footer_distribucion .footer__sobrenosotros{
-  line-height: 20px;
-  color: #fff;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-
-}
-
-.footer_distribucion .footer__sobrenosotros span{
-  display: block;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-
-}
-
-.footer_distribucion .footer__icons{
-  margin-top: 25px;
-
-}
-
-.footer_distribucion .footer__icons a{
-  display: inline-block;
-  cursor: pointer;
-}
-
-@media (min-width: 880px) {
-  .footer_distribucion .footer_links, .footer_distribucion .footer__center,
-  .footer_distribucion .footer__derecha{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer_distribucion .footer__center{
-    margin-left: 0;
-  }
-   
-}
 
 .container {
   display: flex;
@@ -319,18 +204,23 @@ footer{
   padding: 20px;
 }
 
-.barber {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
+.texto_nosotros{
   color: #fff;
-  font-family:Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  text-align: center;
+  margin-left: 100px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.barber {
+  color: #fff;
+  text-align: center;
+}
 .barber img {
   width: 200px;
   height: auto;
   border-radius: 50%;
+  margin-top: 50px;
 }
 
 .contenedor__presentacion{
@@ -340,9 +230,9 @@ footer{
 }
 
 .imagen__presentacion{
-  height: 400px;
+  height: 500px;
   margin-top: 5px;
-
+  
 }
 
 /*Turnos*/
@@ -399,15 +289,15 @@ input[type="submit"]:hover {
 }
 
 .main_formulario{
-  position:relative ;
-  margin-bottom: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items:start;
 }
 
-.main_formulario_contenedor{
-  position: absolute;
-  top: -33rem;
-  left: 36rem;
- 
+@media (max-width: 600px) {
+  .main_formulario_contenedor {
+      max-width: 90%;
+  }
 }
-
 
