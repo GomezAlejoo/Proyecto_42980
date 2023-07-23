@@ -228,6 +228,8 @@ footer p {
   display: flex;
   background-color: #333332;
   margin-top: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagen__presentacion{
@@ -332,4 +334,38 @@ input[type="submit"]:hover {
   background-color: #333332;
   border-radius: 1%;
   margin-bottom: 10px;
+}
+
+@media (max-width: 764px) {
+  .servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   
+}
+
+@media (max-width:764px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   
+}
+
+@media (max-width: 764px) {
+  .contenedor_cortes{
+    display: flex;
+  }
+   
+}
+
+@media (max-width: 764px) {
+  .contenedor_cortesimagen img {
+    height: 600px;
+  }
+   
 }
