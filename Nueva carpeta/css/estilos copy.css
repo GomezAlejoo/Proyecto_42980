@@ -26,8 +26,8 @@ body {
 
 .navbar-light .navbar-brand:hover{
   color: #FFFFFF;
-background: #232323;
-text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #d2ac7f, 0 0 30px #d2ac7f, 0 0 40px #d2ac7f, 0 0 55px #d2ac7f, 0 0 75px #d2ac7f;
+  background: #232323;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #d2ac7f, 0 0 30px #d2ac7f, 0 0 40px #d2ac7f, 0 0 55px #d2ac7f, 0 0 75px #d2ac7f;
 }
 
 .navbar-toggler-icon{
@@ -54,14 +54,6 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #d2ac7f, 0 0 3
 
 
 
-.navegacion__texto{
-  position: absolute;
-  color: white;
-  font-family: 'Merriweather', serif;
-  top: 2%;
-  left: 42%;
-  text-align: center;
-}
 
 .header__index{
   background-image: url(../assets/fondo_header.jpg);

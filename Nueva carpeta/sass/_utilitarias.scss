@@ -1,0 +1,96 @@
+body{
+    background-color:#1b1b1b ;
+}
+
+.header__index{
+    background-image: url(../assets/fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 790px;
+    position: relative;
+    filter: grayscale(80%); 
+    
+  }
+  
+  .header__nosotros{
+    background-image: url(../assets/fondo_header_nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 790px;
+    position: relative;
+    filter: grayscale(50%); 
+    
+  
+  }
+  
+  .header__turnos{
+    background-image: url(../assets/fondo_header_turnos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 790px;
+    position: relative;
+    filter: grayscale(50%); 
+  }
+  
+  .header__ubicacion{
+    background-image: url(../assets/fondo_header_ubicacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 790px;
+    position: relative;
+    filter: grayscale(50%); 
+  }
+  
+  .header__galeria{
+    background-image: url(../assets/fondo_header_galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 790px;
+    position: relative;
+    filter: grayscale(50%);
+  
+  }
+
+  .texto__header{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;  
+    text-shadow: 2px 2px 2px #000000;
+  }
+
+  .imagenCorte{
+    margin: 50px;
+  }
+  
+.imagenCorte:hover{
+    filter: grayscale(60%);}
+
+.textoPrincipal{
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+      }
+      
+.imagenTamaño{
+ height: 500px;
+width: 350px;
+}
+
+.imagenCarrusel{
+     height: 570px;
+}
+
+.texto_barberia{
+    max-width: 900px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  

@@ -1,0 +1,31 @@
+.textoPrincipal{
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.imagenTamaño{
+  height: 500px;
+  width: 350px;
+}
+
+section{
+  .servicios{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 70px;
+        .contenedor-cortes{
+          position: relative;
+          .textoCortes {
+            position: absolute;
+            top: 2%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; 
+            color: #fff; 
+            text-shadow: 4px 4px 2px rgba(157, 150, 150, 0.663);
+        
+          }
+        }
+  }
+}

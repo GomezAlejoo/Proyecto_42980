@@ -1,0 +1,79 @@
+.bg-light{
+    background-color: #1b1b1b !important;
+  }
+
+.navbar-light{
+    .navbar-brand{
+        color:$colorblanco;
+    }
+}
+
+.navbar-light{
+    .navbar-brand{
+            &:hover{
+                color: $colorblanco;
+                background: #232323;                  
+                text-shadow: 0 0 5px $colorblanco, 0 0 10px $colorblanco, 0 0 15px $colorblanco, 0 0 20px #d2ac7f, 0 0 30px #d2ac7f, 0 0 40px #d2ac7f, 0 0 55px #d2ac7f, 0 0 75px #d2ac7f;
+
+            }
+    }
+}
+
+.navbar-toggler-icon{
+    background: url('https://api.iconify.design/ph/list-light.svg?color=white') no-repeat center center / contain;
+    content: url('https://api.iconify.design/ph/list-light.svg?color=white');
+}
+
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            color: $colorblanco;
+        }
+    }
+}
+
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            .nav-link.active{
+                color: $colorblanco;
+            }
+            
+        }
+    }
+}
+
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            &:hover{
+                .navbar-light{
+                    .navbar-nav{
+                        .nav-link{
+                            &:focus{
+                                color: rgba(255, 255, 255, 0.7);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.navbar-light{
+    .navbar-toggler{
+        color: $colorblanco;
+        border-color: $colorblanco;
+    }
+}
+
+
+
+
+    
+ 
+
+  
+
