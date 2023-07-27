@@ -1,5 +1,5 @@
 .textoPrincipal{
-  color: #fff;
+  color: $colorblanco;
   text-align: center;
   margin-top: 5px;
 }
@@ -22,7 +22,7 @@ section{
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center; 
-            color: #fff; 
+            color: $colorblanco; 
             text-shadow: 4px 4px 2px rgba(157, 150, 150, 0.663);
         
           }

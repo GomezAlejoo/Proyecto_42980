@@ -44,6 +44,9 @@
 body {
   background-color: #1b1b1b;
 }
+body img {
+  object-fit: cover;
+}
 
 .header__index {
   background-image: url(../assets/fondo_header.jpg);
@@ -96,7 +99,7 @@ body {
 }
 
 .texto__header {
-  color: white;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -203,6 +206,109 @@ section .container .barber h2 {
 }
 section .container .barber p {
   font-family: "Ysabeau Office", sans-serif;
+}
+
+.main_formulario {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.main_formulario .main_formulario_contenedor .textoFormulario_turnos {
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form input[type=text],
+form input[type=tel],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  resize: vertical;
+  height: 100px;
+}
+form input[type=submit] {
+  background-color: #d2ac7f;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form input[type=submit]:hover {
+  background-color: #ca985c;
+}
+
+.galeria .col-lg-4 {
+  margin: 0;
+  padding: 5px;
+}
+.galeria .texto_galeria {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 70px;
+}
+.galeria img {
+  width: 100%;
+  height: 350px;
+}
+.galeria img:hover {
+  border: 5px solid;
+}
+.galeria .contenedor_cortes {
+  background-color: #333332;
+  border-radius: 1%;
+  margin-bottom: 10px;
+}
+.galeria .contenedor_cortes parrafo_galeria {
+  max-width: 800px;
+  margin-right: 60px;
+}
+@media (max-width: 764px) {
+  .galeria .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 764px) {
+  .galeria .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 764px) {
+  .galeria .contenedor_cortes {
+    display: flex;
+  }
+}
+@media (max-width: 764px) {
+  .galeria .contenedor_cortesimagen img {
+    height: 600px;
+  }
 }
 
 footer {
