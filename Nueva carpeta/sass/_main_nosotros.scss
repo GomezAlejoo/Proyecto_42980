@@ -6,17 +6,13 @@ section {
         justify-content: center;
         align-items: center;
 
-        .textoPrincipal {
-            font-family: $fuenteprimaria;
-
-        }
 
         .texto_nosotros {
             color: #fff;
             max-width: 1000px;
             text-align: center;
             margin-left: 100px;
-            font-family: $fuenteparrafos;
+           
         }
     }
 }
@@ -27,10 +23,17 @@ section {
         align-items: center;
         justify-content: space-around;
         padding: 20px;
-
+        
+        
         .barber {
             color: #fff;
             text-align: center;
+            margin: 10px 30px;
+            background-color: #242423;
+            border-radius: 5%;
+            padding-left: 10px;
+            padding-right: 10px;
+           
 
             img {
                 width: 200px;
@@ -40,15 +43,18 @@ section {
 
 
             }
-            h2{
-                font-family: $fuenteprimaria;
-                margin-top: 10px;
-            }
-
-            p{
-                font-family: $fuenteparrafos;
-            }
+          
       
         }
     }
 }
+
+@media (max-width:764px) {
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+     
+  }

@@ -47,6 +47,21 @@ body {
 body img {
   object-fit: cover;
 }
+body * h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 60px;
+}
+body * h2 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 40px;
+}
+body * p {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 20px;
+}
+body * h3 {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
 
 .header__index {
   background-image: url(../assets/fondo_header.jpg);
@@ -186,15 +201,11 @@ section .contenedor__presentacion {
   justify-content: center;
   align-items: center;
 }
-section .contenedor__presentacion .textoPrincipal {
-  font-family: "Tektur", cursive;
-}
 section .contenedor__presentacion .texto_nosotros {
   color: #fff;
   max-width: 1000px;
   text-align: center;
   margin-left: 100px;
-  font-family: "Ysabeau Office", sans-serif;
 }
 
 section .container {
@@ -206,6 +217,11 @@ section .container {
 section .container .barber {
   color: #fff;
   text-align: center;
+  margin: 10px 30px;
+  background-color: #242423;
+  border-radius: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 section .container .barber img {
   width: 200px;
@@ -213,14 +229,15 @@ section .container .barber img {
   border-radius: 50%;
   margin-top: 50px;
 }
-section .container .barber h2 {
-  font-family: "Tektur", cursive;
-  margin-top: 10px;
-}
-section .container .barber p {
-  font-family: "Ysabeau Office", sans-serif;
-}
 
+@media (max-width: 764px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .main_formulario {
   display: flex;
   justify-content: center;
@@ -243,7 +260,6 @@ form label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 form input[type=text],
 form input[type=tel],
@@ -278,7 +294,6 @@ form input[type=submit]:hover {
   color: #fff;
   text-align: center;
   margin-top: 10px;
-  font-size: 70px;
 }
 .galeria img {
   width: 100%;

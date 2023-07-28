@@ -4,6 +4,27 @@ body {
   img {
     object-fit: cover;
   }
+  
+  * h1{
+    font-family: $fuenteprimaria;
+    font-size: 60px;
+  }
+
+  * h2 {
+    font-family:$fuentresecundario ;
+    font-size: 40px;
+  }
+
+  * p{
+    font-family: $fuenteparrafos;
+    font-size: 20px;
+  }
+
+  * h3{
+    font-family: $fuentetercera;
+  }
+
+
 }
 
 .header__index {
