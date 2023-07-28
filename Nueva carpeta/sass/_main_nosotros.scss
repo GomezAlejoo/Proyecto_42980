@@ -1,14 +1,14 @@
 section {
     .contenedor__presentacion {
         display: flex;
-        background-color: #333332;
+        background-color: map-get($colores, color-gris-medio );
         margin-top: 60px;
         justify-content: center;
         align-items: center;
 
 
         .texto_nosotros {
-            color: #fff;
+            color: map-get($colores, color-blanco );
             max-width: 1000px;
             text-align: center;
             margin-left: 100px;
@@ -26,10 +26,10 @@ section {
         
         
         .barber {
-            color: #fff;
+            color: map-get($colores, color-blanco );
             text-align: center;
             margin: 10px 30px;
-            background-color: #242423;
+            background-color: map-get($colores, color-gris-oscuro );
             border-radius: 5%;
             padding-left: 10px;
             padding-right: 10px;

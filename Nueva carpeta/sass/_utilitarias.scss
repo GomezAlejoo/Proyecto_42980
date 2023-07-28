@@ -1,5 +1,5 @@
 body {
-  background-color: #1b1b1b;
+  background-color:map-get($colores, color-fondo );
 
   img {
     object-fit: cover;
@@ -38,51 +38,32 @@ body {
 
 }
 
-.header__nosotros {
+
+.header__nosotros{
+  @extend .header__index;
   background-image: url(../assets/fondo_header_nosotros.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 790px;
-  position: relative;
   filter: grayscale(50%);
-
-
 }
 
-.header__turnos {
+.header__turnos{
+  @extend .header__nosotros;
   background-image: url(../assets/fondo_header_turnos.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 790px;
-  position: relative;
-  filter: grayscale(50%);
+  
 }
 
-.header__ubicacion {
+.header__ubicacion{
+  @extend .header__nosotros;
   background-image: url(../assets/fondo_header_ubicacion.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 790px;
-  position: relative;
-  filter: grayscale(50%);
 }
-
-.header__galeria {
+.header__galeria{
+  @extend .header__nosotros;
   background-image: url(../assets/fondo_header_galeria.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 790px;
-  position: relative;
-  filter: grayscale(50%);
 
 }
+
 
 .texto__header {
-  color: $colorblanco;
+  color: map-get($colores, color-blanco );
   position: absolute;
   top: 50%;
   left: 50%;
@@ -100,7 +81,7 @@ body {
 }
 
 .textoPrincipal {
-  color: $colorblanco;
+  color: map-get($colores, color-blanco );
   text-align: center;
   margin-top: 5px;
 }
