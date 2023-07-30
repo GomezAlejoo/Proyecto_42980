@@ -61,6 +61,11 @@ body {
 
 }
 
+.header__error404{
+  @extend .header__nosotros;
+  background-image:url(../assets/fond_header_error404.jpg);
+}
+
 
 .texto__header {
   color: map-get($colores, color-blanco );

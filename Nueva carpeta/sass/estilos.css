@@ -63,7 +63,7 @@ body * h3 {
   font-family: "Fira Sans Condensed", sans-serif;
 }
 
-.header__index, .header__nosotros, .header__galeria, .header__ubicacion, .header__turnos {
+.header__index, .header__nosotros, .header__error404, .header__galeria, .header__ubicacion, .header__turnos {
   background-image: url(../assets/fondo_header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +73,7 @@ body * h3 {
   filter: grayscale(80%);
 }
 
-.header__nosotros, .header__galeria, .header__ubicacion, .header__turnos {
+.header__nosotros, .header__error404, .header__galeria, .header__ubicacion, .header__turnos {
   background-image: url(../assets/fondo_header_nosotros.jpg);
   filter: grayscale(50%);
 }
@@ -88,6 +88,10 @@ body * h3 {
 
 .header__galeria {
   background-image: url(../assets/fondo_header_galeria.jpg);
+}
+
+.header__error404 {
+  background-image: url(../assets/fond_header_error404.jpg);
 }
 
 .texto__header {
@@ -286,6 +290,7 @@ form input[type=submit]:hover {
   margin-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 10px;
 }
 .galeria .contenedor_cortes parrafo_galeria {
   max-width: 800px;
