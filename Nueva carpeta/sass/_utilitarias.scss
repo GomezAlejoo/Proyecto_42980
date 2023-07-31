@@ -112,3 +112,18 @@ body {
 .texto_seminarios {
   text-shadow: 4px 4px 2px rgba(157, 150, 150, 0.663);
 }
+
+.boton{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d2ac7f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+    &:hover{
+      color:map-get($colores, color-gris-claro ) ;
+      background-color: #ca985c;
+    }
+}
