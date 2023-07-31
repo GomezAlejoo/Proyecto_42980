@@ -1,26 +1,26 @@
 body {
-  background-color:map-get($colores, color-fondo );
+  background-color: map-get($colores, color-fondo);
 
   img {
     object-fit: cover;
   }
-  
-  * h1{
+
+  * h1 {
     font-family: $fuenteprimaria;
     font-size: 60px;
   }
 
   * h2 {
-    font-family:$fuentresecundario ;
+    font-family: $fuentresecundario ;
     font-size: 40px;
   }
 
-  * p{
+  * p {
     font-family: $fuenteparrafos;
     font-size: 20px;
   }
 
-  * h3{
+  * h3 {
     font-family: $fuentetercera;
   }
 
@@ -39,36 +39,37 @@ body {
 }
 
 
-.header__nosotros{
+.header__nosotros {
   @extend .header__index;
   background-image: url(../assets/fondo_header_nosotros.jpg);
   filter: grayscale(50%);
 }
 
-.header__turnos{
+.header__turnos {
   @extend .header__nosotros;
   background-image: url(../assets/fondo_header_turnos.jpg);
-  
+
 }
 
-.header__ubicacion{
+.header__ubicacion {
   @extend .header__nosotros;
   background-image: url(../assets/fondo_header_ubicacion.jpg);
 }
-.header__galeria{
+
+.header__galeria {
   @extend .header__nosotros;
   background-image: url(../assets/fondo_header_galeria.jpg);
 
 }
 
-.header__error404{
+.header__error404 {
   @extend .header__nosotros;
-  background-image:url(../assets/fond_header_error404.jpg);
+  background-image: url(../assets/fond_header_error404.jpg);
 }
 
 
 .texto__header {
-  color: map-get($colores, color-blanco );
+  color: map-get($colores, color-blanco);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,15 +79,17 @@ body {
 }
 
 .imagenCorte {
-  margin: 50px;
+  margin: 60px;
+  transition: transform 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
-.imagenCorte:hover {
-  border: 5px solid black;
-}
+
 
 .textoPrincipal {
-  color: map-get($colores, color-blanco );
+  color: map-get($colores, color-blanco);
   text-align: center;
   margin-top: 5px;
 }

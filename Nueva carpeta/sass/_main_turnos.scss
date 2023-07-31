@@ -6,7 +6,7 @@
 
     .main_formulario_contenedor {
         .textoFormulario_turnos {
-            color: map-get($colores, color-blanco );
+            color: map-get($colores, color-blanco);
             text-align: center;
         }
     }
@@ -16,7 +16,7 @@
 form {
     max-width: 400px;
     margin: 0 auto;
-    background-color: map-get($colores, color-blanco );
+    background-color: map-get($colores, color-blanco);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

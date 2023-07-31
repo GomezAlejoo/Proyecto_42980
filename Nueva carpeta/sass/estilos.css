@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'animate.css';
 .bg-light {
   background-color: #1b1b1b !important;
 }
@@ -22,12 +23,14 @@
   color: #ffffff;
 }
 
-.navbar-light .navbar-nav .nav-link .nav-link.active {
+.navbar-light .navbar-nav .nav-link.active {
   color: #ffffff;
 }
 
-.navbar-light .navbar-nav .nav-link:hover .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.7);
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+  background: #232323;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #d2ac7f, 0 0 30px #d2ac7f, 0 0 40px #d2ac7f, 0 0 55px #d2ac7f, 0 0 75px #d2ac7f;
 }
 
 .navbar-light .navbar-toggler {
@@ -105,11 +108,11 @@ body * h3 {
 }
 
 .imagenCorte {
-  margin: 50px;
+  margin: 60px;
+  transition: transform 0.3s ease;
 }
-
 .imagenCorte:hover {
-  border: 5px solid black;
+  transform: scale(1.1);
 }
 
 .textoPrincipal {
@@ -150,8 +153,9 @@ body * h3 {
 
 section .servicios {
   display: flex;
-  margin-left: 100px;
   margin-top: 70px;
+  justify-content: center;
+  align-items: center;
 }
 section .servicios .contenedor-cortes {
   position: relative;
@@ -172,7 +176,10 @@ section .servicios .contenedor-cortes .textoCortes {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 100px;
+  }
+  .textoPrincipal {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 section .contenedor__presentacion {
@@ -186,7 +193,7 @@ section .contenedor__presentacion .texto_nosotros {
   color: #ffffff;
   max-width: 1000px;
   text-align: center;
-  margin-left: 100px;
+  justify-content: center;
 }
 
 section .container {
@@ -217,6 +224,11 @@ section .container .barber img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 764px) {
+  .texto_nosotros {
+    margin: 10px 20px;
   }
 }
 .main_formulario {
@@ -280,9 +292,10 @@ form input[type=submit]:hover {
 .galeria img {
   width: 100%;
   height: 350px;
+  transition: transform 0.3s ease;
 }
 .galeria img:hover {
-  border: 5px solid;
+  transform: scale(1.03);
 }
 .galeria .contenedor_cortes {
   background-color: #333332;
