@@ -41,10 +41,7 @@
 
   @media (max-width: 764px) {
     .servicios {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include centrar-columna-flexbox;
       margin-right: 100px;
     }
 
@@ -52,10 +49,7 @@
 
   @media (max-width:764px) {
     .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include centrar-columna-flexbox;
     }
 
   }

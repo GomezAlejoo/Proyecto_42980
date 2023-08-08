@@ -18,3 +18,10 @@ $colores: (
 
 
 );
+
+@mixin centrar-columna-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

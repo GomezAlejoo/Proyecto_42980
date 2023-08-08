@@ -7,7 +7,7 @@
 
 .imagenTamaño {
   height: 500px;
-  width: 350px;
+  width: 290px;
 }
 
 section {
@@ -36,10 +36,7 @@ section {
 
 @media (max-width: 764px) {
   .servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   @include centrar-columna-flexbox;
   }
 
   .textoPrincipal {
